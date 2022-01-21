@@ -1,0 +1,143 @@
+$screenpadding: 1em;
+$colorprimary: #8F5BD7;
+$colorsecondary: #E0337B;
+
+// ====================================
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    // background-color: lighten($colorprimary, 34);
+    background: linear-gradient(180deg, #F1EAFA 11.81%, #D5C1F0 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+// ====================================
+
+.statusbar {
+    height: 44px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: $screenpadding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    height: 56px;
+    position: fixed;
+    top: 44px;
+    left: 0;
+    right: 0;
+    padding: $screenpadding;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 500;
+    color: darken($colorprimary, 10);
+    span {
+        color: $colorsecondary;
+    }
+}
+.spaceholder {
+    z-index: -1;
+    width: 100%;
+    height: 100px;
+}
+.feeling {
+    padding: $screenpadding;
+    h1 {
+        font-size: 46px;
+        margin: 0 0 .5em;
+        color: darken($colorprimary, 43);
+    }
+    .options {
+        display: flex;
+        justify-content: space-evenly;
+        color: $colorprimary;
+        i {
+            font-size: 32px;
+        }
+    }
+}
+.dailymessage {
+    padding: $screenpadding;
+    .fa-quote-left {
+        font-size: 32px;
+        line-height: 1;
+        opacity: .1;
+        color: darken($colorprimary, 20);
+    }
+    p {
+        margin: 0;
+        font-size: 15px;
+        color: darken($colorprimary, 38);
+    }
+    .author {
+        margin-top: .5em;
+        font-size: 11px;
+        text-align: right;
+        color: darken($colorprimary, 38);
+    }
+}
+.tabbar {
+    position: fixed;
+    bottom: 54px;
+    height: 64px;
+    right: 24px;
+    left: 24px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    i {
+        font-size: 26px;
+        color: darken($colorprimary, 30);
+        opacity: .5;
+        line-height: 1;
+        padding: .4em;
+        border-radius: 10px;
+        &.active {
+            opacity: 1;
+            color: white;
+            background-color: darken($colorprimary, 10);
+        }
+    }
+    box-shadow: 0 0 0 8px rgba($color: white, $alpha: .2), 0px 32px 20px -14px rgba(71, 25, 119, 0.07);
+}
+.homebutton {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .indicator {
+        height: 5px;
+        width: 134px;
+        background-color: black;
+        border-radius: 99px;
+    }
+}
+.colectionSlider {
+    width: 100%;
+    margin-top: 1.5em;
+}
+  
+/* ---- particles.js container ---- */
+#particles-js {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: .5;
+}

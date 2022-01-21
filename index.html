@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATMA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f5e232dc05.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="master.css">
+</head>
+<body>
+    <div class="statusbar">
+        <img src="img/status-time.svg" alt="">
+        <img src="img/status-icons.svg" alt="">
+    </div>
+    <header>
+        <div>
+            PLANO<span>•</span>
+        </div>
+    </header>
+    <div class="spaceholder"></div>
+    <div class="feeling">
+        <h1>
+            Se sente...
+        </h1>
+        <div class="options">
+            <i class="fa-light fa-face-sad-tear"></i>
+            <i class="fa-light fa-face-frown"></i>
+            <i class="fa-light fa-face-expressionless"></i>
+            <i class="fa-light fa-face-grin"></i>
+            <i class="fa-light fa-face-grin-beam"></i>
+        </div>
+    </div>
+    <div class="dailymessage">
+        <div>
+            <i class="fa-solid fa-quote-left"></i>
+        </div>
+        <p>
+            <em>Como é bom estar viva, respirar e a apreciar cada instante, assim como eles são.</em>
+        </p>
+        <div class="author">
+            / MONJA COEN
+        </div>
+    </div>
+    <img class="colectionSlider" src="img/atma-slider.png" alt="">
+    <div class="tabbar">
+        <i class="fa-regular fa-shapes"></i>
+        <i class="fa-regular fa-seedling"></i>
+        <i class="active fa-solid fa-spa"></i>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-regular fa-user-circle"></i>
+    </div>
+    <div class="homebutton">
+        <div class="indicator"></div>
+    </div>
+    <!-- particles -->
+    <script src="node_modules/particles.js/particles.js"></script>
+    <div id="particles-js"></div>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                "value": 80,
+                "density": {
+                    "enable": true,
+                    "value_area": 473.4895191122072
+                }
+                },
+                "color": {
+                "value": "#c7adeb"
+                },
+                "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                },
+                "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                }
+                },
+                "opacity": {
+                "value": 0.5,
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 0.2,
+                    "opacity_min": 0.5,
+                    "sync": false
+                }
+                },
+                "size": {
+                "value": 7.891491985203452,
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 1,
+                    "size_min": 0.5,
+                    "sync": false
+                }
+                },
+                "line_linked": {
+                "enable": false,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+                },
+                "move": {
+                "enable": true,
+                "speed": 1,
+                "direction": "top",
+                "random": true,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                "onhover": {
+                    "enable": false,
+                    "mode": "repulse"
+                },
+                "onclick": {
+                    "enable": false,
+                    "mode": "push"
+                },
+                "resize": true
+                },
+                "modes": {
+                "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                    "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 200,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+                }
+            },
+            "retina_detect": true
+        }); 
+</script>
+    
+</body>
+</html>
